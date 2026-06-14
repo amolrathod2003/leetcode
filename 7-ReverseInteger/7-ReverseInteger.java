@@ -1,4 +1,4 @@
-// Last updated: 6/14/2026, 1:08:25 PM
+// Last updated: 6/14/2026, 1:08:36 PM
 1class Solution {
 2    public int hammingWeight(int n) {
 3        int cnt=0;
