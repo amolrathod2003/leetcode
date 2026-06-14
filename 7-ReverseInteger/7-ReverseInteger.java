@@ -1,16 +1,14 @@
-// Last updated: 5/12/2026, 1:57:24 PM
+// Last updated: 6/14/2026, 1:05:29 PM
 1class Solution {
-2    public int reverse(int x) {
-3        int rev = 0;
-4        while (x != 0) {
-5            int dig = x % 10;
-6            if(rev>Integer.MAX_VALUE/10 || rev<Integer.MIN_VALUE/10){
-7                return 0;
-8            }
-9            rev = rev * 10 + dig;
-10            x = x / 10;
-11        }
-12
-13        return rev;
-14    }
-15}
+2    public int reverseBits(int n) {
+3        int res=0;
+4        for(int i=0;i<32;i++){
+5            res<<=1;
+6            res |= (n&1);
+7            n >>>= 1;
+8        }
+9        return res;
+10
+11        
+12    }
+13}
