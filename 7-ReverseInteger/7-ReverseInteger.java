@@ -1,14 +1,12 @@
-// Last updated: 6/14/2026, 1:05:29 PM
+// Last updated: 6/14/2026, 1:08:25 PM
 1class Solution {
-2    public int reverseBits(int n) {
-3        int res=0;
-4        for(int i=0;i<32;i++){
-5            res<<=1;
-6            res |= (n&1);
-7            n >>>= 1;
-8        }
-9        return res;
-10
-11        
-12    }
-13}
+2    public int hammingWeight(int n) {
+3        int cnt=0;
+4        while(n!=0){
+5            n=n&(n-1);
+6            cnt++;
+7        }
+8        return cnt;
+9        
+10    }
+11}
