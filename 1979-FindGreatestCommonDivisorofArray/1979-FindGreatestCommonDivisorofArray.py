@@ -1,4 +1,4 @@
-# Last updated: 7/18/2026, 4:33:52 PM
+# Last updated: 7/18/2026, 4:38:50 PM
 1class Solution(object):
 2    def findGCD(self, nums):
 3        min_num = nums[0]
